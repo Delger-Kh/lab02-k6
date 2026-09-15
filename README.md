@@ -33,6 +33,10 @@ SLO = baseline p95 (725.58ms) × 1.5 ≈ **1088ms**
   (бодит p95=256.6ms). Энэ нь бодит SLO биш — зөвхөн PASS/FAIL хоёуланг үзүүлэх
   зорилготой туршилт.
 
+Скриптийн файлууд: `script-threshold-pass.js` (30 VU, PASS),
+`script-threshold-fail.js` (100 VU, FAIL — санаатай хатуу threshold).
+Дэлгэцийн зураг: `screenshots/threshold-pass.png`, `screenshots/threshold-fail.png`
+
 ## Дүгнэлт
 
 1. Load тестийг зөвшөөрөлтэй дадлагын сайт test.k6.io дээр гүйцэтгэсэн бөгөөд
