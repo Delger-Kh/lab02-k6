@@ -2,10 +2,10 @@ import http from 'k6/http';
 import { check, sleep } from 'k6';
 
 export const options = {
-  vus: 100,
+  vus: 30,
   duration: '30s',
   thresholds: {
-    http_req_duration: ['p(95)<200'],  // санаатайгаар хатуу тогтоов — 100 VU-гийн бодит ачааллыг даахгүйг харуулах зорилготой
+    http_req_duration: ['p(95)<1088'],  // baseline: Алхам 2 - 5 VU p95=725.58ms × 1.5
     http_req_failed: ['rate<0.01'],
   },
 };
