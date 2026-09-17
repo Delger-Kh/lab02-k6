@@ -3,9 +3,9 @@ import { check, sleep } from 'k6';
 
 export const options = {
   vus: 30,
-  duration: '30s',
+  duration: '1m',
   thresholds: {
-    http_req_duration: ['p(95)<1088'],  // baseline: Алхам 2 - 5 VU p95=725.58ms × 1.5
+    http_req_duration: ['p(95)<344'],  // baseline: Алхам 2 - 5 VU p95=229.61ms × 1.5
     http_req_failed: ['rate<0.01'],
   },
 };
